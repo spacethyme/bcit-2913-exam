@@ -6,7 +6,7 @@ export default function BookList ({ setActiveBook }) {
         <section className="book-list">
             {books.map((b, key) => (
                 <button onClick={() => {setActiveBook(b.id)}} key={key}>
-                    <img src={b.coverImg} />
+                    <img src={b.coverImg} alt="book cover" />
                     <p>{b.name}</p>
                 </button>
             ))}

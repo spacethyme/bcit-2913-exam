@@ -3,7 +3,7 @@
   background-color: black;
 }
 
-h2, p, td, label {
+h3, p, li {
   color: white;
 }
 
@@ -14,23 +14,19 @@ h2, p, td, label {
   display: flex;
 }
 
-.book-details-info img {
+.book-details-img img {
   max-height: 300px;
 }
 
-.book-details-info p {
+.book-details-img p {
   margin: 0;
   text-align: center;
   color: silver;
   font-style: italic;
 }
 
-.book-details-sequels {
+.book-details-info {
   padding-left: 0.75em;
-}
-
-.book-details-sequels td {
-  padding-right: 0.5em;
 }
 
 /* book List = lower section */
