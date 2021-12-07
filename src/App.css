@@ -18,22 +18,14 @@ h3, p, li {
   max-height: 300px;
 }
 
-.book-details-img p {
-  margin: 0;
-  text-align: center;
-  color: silver;
-  font-style: italic;
-}
-
 .book-details-info {
-  padding-left: 0.75em;
+  padding-left: 1.5em;
 }
 
 /* book List = lower section */
 
 .book-list {
   padding: 1em;
-  margin-top: 1em;
   max-width: 800px;
 }
 

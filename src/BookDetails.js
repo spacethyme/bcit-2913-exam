@@ -38,6 +38,7 @@ export default function BookDetails ({ activeBook }) {
                     <SequelList sequels={book.sequels} />
                     : ""
                 }
+                <h3 className="rating">Rating: {book.rating}</h3>
             </div>
         </section>
     )
