@@ -1,3 +1,66 @@
 .App {
+  padding: 1em;
+  background-color: black;
+}
+
+h2, p, td, label {
+  color: white;
+}
+
+/* Book Details = upper section */
+
+.book-details {
+  padding: 1em;
+  display: flex;
+}
+
+.book-details-info img {
+  max-height: 300px;
+}
+
+.book-details-info p {
+  margin: 0;
   text-align: center;
+  color: silver;
+  font-style: italic;
+}
+
+.book-details-sequels {
+  padding-left: 0.75em;
+}
+
+.book-details-sequels td {
+  padding-right: 0.5em;
+}
+
+/* book List = lower section */
+
+.book-list {
+  padding: 1em;
+  margin-top: 1em;
+  max-width: 800px;
+}
+
+.book-list button {
+  width: 100%;
+  padding: .4em;
+  background-color: black;
+  border: 1px solid black;
+  border-radius: 1em;
+  display: flex;
+  cursor: pointer;
+}
+
+.book-list button:hover {background-color: #222;}
+.book-list button:active {background-color: #213;}
+
+.book-list button img {
+  max-height: 75px;
+  border-radius: 20%;
+  border: 2px solid darkslategrey;
+}
+
+.book-list button p {
+  font-size: 1.4em;
+  padding-left: 1em;
 }

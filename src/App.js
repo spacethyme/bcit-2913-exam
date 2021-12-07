@@ -1,12 +1,9 @@
 import { useState } from 'react';
 import './App.css';
-import books from './data.js';
 import BookDetails from './BookDetails';
 import BookList from './BookList';
 
-function App() {
-  console.log(books);
-
+export default function App() {
   const [activeBook, setActiveBook] = useState(0);
 
   return (
@@ -16,5 +13,3 @@ function App() {
     </div>
   );
 }
-
-export default App;

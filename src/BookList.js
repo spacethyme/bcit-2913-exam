@@ -1,3 +1,5 @@
+import books from './data.js';
+
 export default function BookList ({ setActiveBook }) {
     return (
         <div>
