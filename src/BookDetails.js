@@ -1,5 +1,13 @@
 import books from './data.js';
 
+const stars = {
+    1: "⭐️",
+    2: "⭐️⭐️",
+    3: "⭐️⭐️⭐️",
+    4: "⭐️⭐️⭐️⭐️",
+    5: "⭐️⭐️⭐️⭐️⭐️",
+} // I'm sure there's a better way to do this, but hey 10 minutes left :D
+
 export default function BookDetails ({ activeBook }) {
 
     const fallbackImage = "https://via.placeholder.com/300/222222/000000?text=placeholder.com";
@@ -30,7 +38,7 @@ export default function BookDetails ({ activeBook }) {
                     <li>(no sequels)</li>
                     }
                 </ul>
-                <h3 className="rating">Rating: {book.rating}</h3>
+                <h3 className="rating">Rating: {stars[book.rating]}</h3>
             </div>
         </section>
     )
