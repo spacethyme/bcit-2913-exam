@@ -1,12 +1,15 @@
 import books from './data.js';
 
 export default function BookList ({ setActiveBook }) {
+    console.log(books);
     return (
-        <div>
-            <p>--BookList Component--</p>
-            <button onClick={() => {setActiveBook(1)}}>
-                Set Active Book to 1
-            </button>
-        </div>
-    )
+        <section className="book-list">
+            {books.map((b, key) => (
+                <button onClick={() => {setActiveBook(b.id)}} key={key}>
+                    <img src={b.coverImg} />
+                    <p>{b.name}</p>
+                </button>
+            ))}
+        </section>
+    );
 }

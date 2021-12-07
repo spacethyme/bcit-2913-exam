@@ -16,7 +16,7 @@ export default function BookDetails ({ activeBook }) {
                     {book.sequels ?
                         JSON.stringify(book.sequels)
                         :
-                        "(no data)"
+                        "(no sequels)"
                     }
                 </p>
             </div>
