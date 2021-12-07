@@ -18,7 +18,7 @@ export default function BookDetails ({ activeBook }) {
 
     const fallbackImage = "https://via.placeholder.com/300/222222/000000?text=placeholder.com";
     const book = books[activeBook];
-    console.log(book.sequels);
+    console.log(book);
 
     return (
         <section className="book-details">
@@ -26,10 +26,17 @@ export default function BookDetails ({ activeBook }) {
                 <img src={ book.coverImg ? book.coverImg : fallbackImage } alt="book cover" />
             </div>
             <div className="book-details-info">
+                <h3>Author Info:</h3>
+                <ul>
+                    <li>{book.author}</li>
+                    {book.coAuthor ?
+                        <li>{book.coAuthor} (co-author)</li>
+                        : ""
+                    }
+                </ul>
                 {book.sequels ?
                     <SequelList sequels={book.sequels} />
-                    :
-                    <p>(no sequels)</p>
+                    : ""
                 }
             </div>
         </section>

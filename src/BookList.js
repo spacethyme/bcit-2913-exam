@@ -1,7 +1,6 @@
 import books from './data.js';
 
 export default function BookList ({ setActiveBook }) {
-    console.log(books);
     return (
         <section className="book-list">
             {books.map((b, key) => (
